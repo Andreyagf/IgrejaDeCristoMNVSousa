@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Membros</title>
+</head>
+<body>
+    <form class="form">
+        
+        <fieldset> 
+            <legend>Dados Pessoais</legend>
+
+            <p>
+                <label for="nomeCompleto">Nome Completo</label>
+                <input type="text" name="nome" id="nomeCompleto">
+            </p>
+
+            <p>
+                <label for="rg">RG</label>
+                <input type="number"  id="rg">
+            </p>
+
+            </p>
+                <label for="cpf">CPF</label>
+                <input type="number"  id="cpf">
+            </p>
+        </fieldset>
+        <fieldset> 
+            <legend>Endereço</legend>
+            <p>
+                <label for="nomeLog">Nome do Logradouro</label>
+                <input type="text"  id="nomeLog">
+                <label for="numLog">Número</label>
+                <input type="number"  id="numLog">
+            </p>
+            </p>
+                <label for="bairro">Bairro</label>
+                <input type="text"  id="bairro">
+                <label for="cep">CEP</label>
+                <input type="number"  id="cep">
+                <label for="dotRef">Ponto de Referência</label>
+                <input type="text"  id="dotRef">
+            </p>
+        </fieldset>
+        <p>
+            <button onclick="cadastrarMembros()">Enviar</button>
+        </p>
+    </form>
+
+    <div class="resultado"></div>
+
+    <script src="/interacao/cadastrarMembros.js"></script>
+</body>
+</html>

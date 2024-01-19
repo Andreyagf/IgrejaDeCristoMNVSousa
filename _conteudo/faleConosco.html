@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cria Formulários</title>
+    <link rel="stylesheet" href="/_css/estiloFaleConosco.css">
+</head>
+<body>
+    <form action="pagina-processa-dados-do-formulario" method="post">
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="usuarioNome" id="nome">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="usuarioEmail" id="email">
+        </div>
+        <div>
+            <label for="msg">Mensagem</label>
+            <textarea name="usuarioMsg" id="msg" cols="30" rows="10"></textarea>
+        </div>
+        <div class="botao">
+            <button type="submit">Enviar sua mensagem</button>
+        </div>
+    </form>
+</body>
+</html>
